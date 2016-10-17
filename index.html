@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Made by Shirley Bacilio @Gatopurpura">
+  <title>Shirley Bacilio</title>
+  <link rel="stylesheet" href="contact.html">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/utilities.css" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/fontawesome-webfont.eot">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link href="fonts/glyphicons-halfings-regular.eot" rel="stylesheet">
+  <link href="fonts/glyphicons-halfings-regular.svg" rel="stylesheet">
+  <link href="fonts/glyphicons-halfings-regular.ttf" rel="stylesheet">
+  <link href="fonts/glyphicons-halfings-regular.woff" rel="stylesheet">
+  <link href="fonts/glyphicons-halfings-regular.woff2" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+  <body>
+    <script language='javascript' type='text/javascript'>
+      var arriba;
+      function subir() {
+        if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+          window.scrollBy(0, -15);
+          arriba = setTimeout('subir()', 10);
+        }
+        else clearTimeout(arriba);
+      }
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <header>
+      <!-- NAVEGADOR-->
+      <nav id="menu" class="navbar navbar-inverse navbar-fixed-top text-uppercase">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+             Shirley <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4T6WTYVEDQQyFv6eAooCiABzQc4ADigKKAg4FcAooCpDAVQHUwdVBHSzzjhyzswVmFvbXTvLyJZtkxT+PUkrnZkh6r2GllObAzIAUgQbcSurDeRJ2CwdgJ2lIKS2AB+AzcQaYCrDYQd+dA58BNk7Zal5h7daANXBVGxn6zoBL4CUMO2APnP0ALP2nBiyBpwi4l9TGZHrgKAM10eA8YWNAC9yFsJfU+F6AO0mrsD8CN6G/LgG2ryR1Ma7XL6G0LqB2jRV4nm9/bOKxoiy/96IS8ixpOQG8ON7EvGm/8bbAQtJ+BEQVhngn8ko24c5tHdA6eFzlMk38g7lHlsFnsfuD/0MecwCo7AMfKM54kerHK6sAAAAASUVORK5CYII="/></a>
+           </div>
+           <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav open navbar-nav navbar-right">
+              <li class="nav-space">
+                <a id="home"href="index.html">Home</a>
+              </li>
+              <li class="nav-space">
+                <a id="sobre-mi" href="#about">About me</a>
+              </li>
+              <li class="nav-space">
+                <a id="trabajo" href="#trabajos">My works</a>
+              </li>
+              <li class="nav-space">
+                <a id="servicio" href="#servicios">Skills</a>
+              </li>
+              <li class="nav-space">
+                <a id="blog" href="#Blog">Blog</a>
+              </li>
+              <li class="nav-space">
+                <a id="contac" href="#contactame">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--VIDEO-->
+
+    <div id="page_effect">
+      <section class="hero-image">
+        <video class="m-0" preload autoplay loop muted src="img/shirley.mp4" width="100%" type></video>
+        <div id="home" class="overlay container home-skew text-center">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo">
+              <p class="lead">"My creativity flies like the airplanes, <br> i can build a brain without read the instructions".</p>
+              <br>
+            </div>
+            <a id="nav_slow"class="wow bounceInUp scroll-down" href="#about">
+              <i class="fa fa-4x fa-chevron-circle-down animated infinite bounceInDown"onclick='bajar();return true' title='Ir Abajo'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CONOCEME-->
+
+    <section id="about" class="about">
+      <div class="container text-center  pt-5 pb-5">
+        <div class="row">
+          <h1>About me</h1>
+          <div class="line mb.5"></div>
+          <div class="profile img-responsive mg-5">
+            <div class="comentario">
+              <p>25 años frescos. Amo <b>programar</b>, hacer fotografías, escribir y a <b>Batman</b>. Me dicen <b>gato</b>.<br>
+              Mi vida se hizo el día en el que mi papá me dio su cámara y dijo: "Shirley,  ayúdame con esto un ratito". No...
+              </p>
+              <p> se la devolví jamás.</p>
+            </div>
+          </div>
+          <p class="texto-about lh pd-5 mg-auto">Soy una mezcla de <b>desarrolladora web</b>, <b>fotógrafa</b> y escritora. No recuerdo exactamente la hora en la que desperté a las 3am porque estaba soñando con un código que tenía que hacer, luego de prender la computadora y aplicar el código, mi problema estaba resuelto,  cuando eso pasó entendí que esto es lo que quiero hacer.
+            Cada día me exijo mucho en las distintas áreas del desarrollo <strong>front-end</strong>, suelo esforzarme porque las cosas salgan bien, es más, considero que es mi estilo, quizá por eso me hace tanto bien programar.
+            <br>
+            Si quieres saber algo más de este híbrido <b>coder-photographer</b>, <a class="enlace-about" href="#contactame">¿Qué te parece si nos tomamos un café?</a>
+          </p>
+        </div>
+      </div>      
+    </section>
+    
+    <!--TRABAJOS REALIZADOS-->
+
+    <section id="trabajos">
+      <div class="container text-center pt-5">
+        <div class="row pb-5">
+          <h1>My works</h1>
+          <div class="line"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="dashy"></div>
+            <div class="view third-effect">
+             <img src="https://media.giphy.com/media/3oz8xONhl5EfIcxxza/giphy.gif">
+             <div class="mask">
+              <a href="www.contactoweb.upc.edu.pe"  class="info" title="Full Image">Contacto Web</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="view third-effect">
+            <img src="https://media.giphy.com/media/3oz8xBhU33TWHrjjFe/giphy.gif">
+            <div class="mask">
+              <a href="http://shirleybacilio.github.io/Proyecto-X---Delinatur/" class="info" title="Full Image">Delinatur</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
+          <div class="view third-effect">
+            <img src="https://media.giphy.com/media/l4pM2yRVI0OF8eIN2/giphy.gif">
+            <div class="mask">
+              <a href="#" class="info" title="Full Image">Flat themes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="view third-effect">
+            <img src="https://media.giphy.com/media/l3vRiZl5sBSQgEDxC/source.gif">
+            <div class="mask">
+             <a href="#" class="info" title="Full Image">Freelancer</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="view third-effect">
+          <img src="https://media.giphy.com/media/3o7TKtRvL9cFeKaGdy/source.gif">
+          <div class="mask">
+            <a href="www.ecash.pe" class="info" title="Full Image">eCash</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="view third-effect">
+          <img src=" https://media.giphy.com/media/3o7TKWGtwBXjmmJelW/source.gif">
+          <div class="mask">
+            <a href="http://shirleybacilio.github.io/exposicion-virtual/" class="info" title="Full Image">Exposición</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="view third-effect">
+          <img src="https://media.giphy.com/media/l3vR8vm86KiY2hqJq/source.gif">
+          <div class="mask">
+            <a href="http://shirleybacilio.github.io/angel-project/" class="info" title="Full Image">Angel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SKILLS-->
+
+<section id="servicios">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <h1>Skills</h1>
+       <div class="line"></div>
+     </div>
+   </div>
+   <div class="row pt-5 pd-5">
+    <div class=".col-lg-12 col-md-12 col-sm-12
+    ">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <a href="https://github.com/shirleybacilio"><i class=" fa saltar fa-file-code-o"></i></a>
+      <div class="text-justify ">
+            <h3 class="text-center">Web developer</h3>
+            <span class="text">Mi sueño es trabajar innovando y ser inspiración para mucha gente.
+              <br>
+              Aprendí <b>HTML, CSS, Javascript</b>, también a usar librerías como bootstrap y Jquery para agilizar mi trabajo.
+              Puedo hacer que tus proyectos se vean desde cualquier dispositivo móvil y también lograr cautivar a tu público gracias mi dominio de UX.
+              <br>Sencillamente, me encanta <a href="https://github.com/shirleybacilio">programar</a>.
+            </span>
+          </div>
+    </div> 
+   
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <a target="_blank"  href="https://www.flickr.com/photos/shirleybacilio"><i class="fa saltar fa-camera-retro"></i></a>
+      <div class="text-justify">
+        <h3 class="text-center">Photographer</h3>
+        <span class="text">Hago fotografía para ser feliz, es mi secreto anti - stress. La luz es mi mejor amiga a la hora de capturar. Hago foto periodismo.
+          <br>
+          A lo largo de mi aventura como fotógrafa también aprendí a ser perseverante para lograr un buen resultado, o sea, una buena foto. Soy muy feliz con cada cosa que aprendo en el <a target="_blank"  href="http://micubilfelino.tumblr.com/">camino</a>. 
+        </span>
+      </div>
+      
+    </div>
+     
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <a target="_blank" href="https://www.youtube.com/watch?v=9hLuJQ_Coug&list=PL8CsI26urhCUIFvKzqsYDC0lpUZNlFr6S"><i class="fa fa-video-camera"></i> </a>
+      <div class="text-justify">
+      <h3 class="text-center">Audiovisual Girl </h3>
+      <span class="text">Mi pasión por el cine me ha llevado a lugares inimaginables.
+        <br>
+        Edito videos, porque me gusta. Adobe Master Collection es mi pastor y nada me fallará.<br> Dirijo el Team Audiovisual de un Colectivo creativo en mi Universidad, cheka mis <a target="_blank" href="https://www.youtube.com/watch?v=9hLuJQ_Coug&list=PL8CsI26urhCUIFvKzqsYDC0lpUZNlFr6S">bizarradas</a>. 
+      </span>
+    </div>
+     
+     </div>
+
+    </div>
+
+   
+  </div>
+</div>
+</section>
+
+<!--BLOG-->
+
+<section id="Blog">
+  <div class="container text-center pt-5 pb-5">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-5">
+       <h1>Blog</h1>
+       <div class="line"></div>
+     </div>
+     <div class="row post mg-1 ">
+       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <img src="https://cdn-images-1.medium.com/max/1600/1*VSeSdW7tTCMWCBkHgb4rqg.jpeg" alt="laboratoria">
+      </div>
+      <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 bg-gray text-left">
+        <h3>Verano</h3>
+        <blockquote>Ya está helando, digo frente a la tele abrigada con mi frazada de franela como un enrollado de pollo. Sé que todo el tiempo digo: “Amo el invierno”, “el frio es mejor”, “la neblina es genial”, etc. Pero esta mañana extrañé el verano, dormir destapada, sin dolor de garganta, es maravilloso. <a href="https://medium.com/@shirleybacilio/verano-2c85aed2525#.rtmkjtv2i">Ver Más</a></blockquote>
+      </div>
+    </div>
+    <div class="row post mg-1">
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 pt-2">
+        <img src="https://cdn-images-1.medium.com/max/1080/1*RmYNTQcV2h7sp6cHxqOI1Q.jpeg" alt="fresas">
+      </div>
+      <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11  bg-gray text-left">
+        <h3>Adiós?! Que hablas…</h3>
+        <blockquote>Y llegamos hasta aquí, con el corazón lleno de sensaciones en la mano, quizá sea la última vez que estemos todas juntas, quizá nos volvamos a ver, y recordar que todo empezó como en los juegos del hambre, uno nunca sabe.<a target="_blank" href="https://medium.com/@shirleybacilio/adi%C3%B3s-que-hablas-b2aa40524c48#.gg03ay3k7">Ver Más</a></blockquote>
+      </div>
+    </div>
+    <div class="row post mg-1">
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1  pt-2">
+        <img src="https://cdn-images-1.medium.com/max/720/1*yfymKSfeStzZ6p5eUOxwfw.png" alt="">
+      </div>
+      <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 bg-gray text-left">
+        <h3>Sin títulos</h3>
+        <blockquote>Todo el tiempo conocemos personas, algunas buenas, otras malas, otras son simplemente… son como son. Sin embargo, hay algunas pueden marcar tu vida de una manera, esta también puede ser buena, o mala, o tal como es. <a href="https://medium.com/@shirleybacilio/sin-t%C3%ADtulos-6b751e18c7da#.1zagq8yvq">Ver Más</a></blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACTAME -->
+
+<section id="contactame" class="contacto pb-5"> 
+  <div class="container text-center">
+   <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center pt-5">
+     <h1>Contáct me</h1>
+     <div class="line-white mt-2"></div>
+     <h4 class= "pt-5 pb-5">Qué bueno que caíste por aquí, seria genial poder coordinar una cita para poder conversar sobre nuestros planes en común para conquistar el mundo.<br> Mis redes sociales abajo para no perder el contacto.</h4>
+   </div>
+ </div>
+ <div class="row">
+  <div class="container">
+   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
+    <div class="sociales pt-5">
+      <a href="https://github.com/shirleybacilio" target="blank"><i class="fa fa-github"></i></a>
+      <a href="https://twitter.com/Gatopurpura"><i class="fa fa-twitter"></i></a>
+      <a href="https://instagram.com/shirleybacilio/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.flickr.com/photos/shirleybacilio/albums"><i class="fa fa-flickr"></i></a>
+      <a href="https://www.youtube.com/user/shirley0410"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.facebook.com/shirleybaciliofotography"><i class="fa fa-facebook"></i></a>
+    </div>
+    <h3>Chorrillos, Lima - Perú</h3>
+    <p>TLF: (+51) 991 050 291</p>
+    <p>shirleybacilio@gmail.com</p>
+    <p>Twitter: @Gatopurpura</p>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+   <form class="pb-5">  
+    <div class="form-group"> 
+      <input class="form-control" type="name" placeholder="Name">
+    </div>
+    <div class="form-group"> 
+      <input class="form-control" type="e-mail" placeholder="E-mail">
+    </div>
+    <div class="form-group">  
+      <input class="form-control" type="text" placeholder="Phone number">
+    </div>
+    <div class="form-group">  
+     <textarea class="form-control" type="text" placeholder="Message" name="text" id="" cols="30" rows="10"></textarea>
+   </div>
+
+   <button  class="btn-default btn w-100" type="submit"><a href="mailto:shirleybacilio@gmail.com">Send!</a>
+    
+  </button>
+</form>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<div class='nav_up' id='nav_up' style='display:none;'/>
+<div class='nav_down' id='nav_down' style='display:none;'/>
+
+<script>
+//<![CDATA[
+
+$(function() {
+  var $elem = $('body');
+  $('#nav_up').fadeIn('slow');
+  $('#nav_down').fadeIn('slow'); 
+  $(window).bind('scrollstart', function(){
+    $('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
+  });
+  $(window).bind('scrollstop', function(){
+    $('#nav_up,#nav_down').stop().animate({'opacity':'1'});
+  });
+  $('#nav_down').click(
+    function (e) {
+      $('html, body').animate({scrollTop: $elem.height()}, 800);
+    } );
+  $('#nav_up').click(
+    function (e) {
+      $('html, body').animate({scrollTop: '0px'}, 800);
+    } );});
+//]]>
+</script>
+<script language='javascript' type='text/javascript'>    
+  var arriba;
+  function subir() {
+    if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+      window.scrollBy(0, -15);
+      arriba = setTimeout('subir()', 10);
+    }
+    else clearTimeout(arriba);
+  }
+</script>
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

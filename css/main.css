@@ -1,0 +1,431 @@
+/*Escribe tu CSS cacharrero aqui*/
+
+
+body, html{
+    width: 100%;
+    height:100%;
+    font-family: 'Josefin Sans', 'Josefin Slab' , sans-serif ;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans';
+}
+
+p{
+  font-size: 14px;
+}
+
+.line{
+  border: 1.5px solid black;
+  width: 40%;
+  margin: auto;
+}
+.nav-space{
+      padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.8em;
+}
+
+.line-white{
+   border: 1.5px solid white;
+  width: 50%;
+  margin: auto;
+}
+/*EFECTO DE FADE*/
+  
+ #page_effect {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} 
+
+/*NAVIGATOR*/
+
+#menu{
+  background: transparent;
+  border: none;
+  padding: 0%;
+  margin: 0%;
+}
+#menu.active {
+  background-color: black;
+  padding: 6px 0;
+  color: rgb(178,6,83)
+  webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateZ(0);
+}
+
+nav {
+  font-size: 1.5em;
+}
+
+.nav li a.active{
+  color: rgb(178,6,83) !important;
+}
+
+/*VIDEO PRESENTACIÓN*/
+.hero-image{
+	width: 100%;
+  height: 100%;
+	background-size: cover; 
+  color: white;
+}
+.overlay{
+    position: absolute;
+    /*top: 180px;*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+    
+#button:hover{
+    -webkit-transition: height 2s ease-in;
+-moz-transition: height 2s ease-in;
+-ms-transition: height 2s ease-in;
+-o-transition: height 2s ease-in;
+transition: height 2s ease-in;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+
+h3,
+h2,
+.servicios p{
+   font-family: 'Josefin Slab', serif;
+
+}
+.cruz{
+    font-size: 16px;
+}
+.pl-8{
+  padding-left: 8%;
+}
+.titulo{
+    font-family: 'Josefin Slab', sans-serif;
+    padding: 1%;
+    font-weight: bold;
+    margin-top: 25%;
+}
+
+@media(max-width: 480px) {
+    /* For mobile phones: */
+    .titulo{
+      visibility: hidden;
+    }
+   #nav_slow{
+    visibility: hidden;
+   }
+   #servicios{
+    display: block;
+   }
+
+}
+
+.titulo p{
+    font-size: 2em;
+}
+.opacity{
+    margin-top: -145px;
+    height: 755px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.scroll-down{
+    color: #9B1843;
+    transition: 2s infinite;
+}
+/*SOBRE MI*/
+.about{
+    background-image: url("../img/light_grey.png");
+    background-color: #F2EFF3;
+    width: 100%;
+    background-size: 100%;
+}
+
+
+.texto-about , span{
+    font-size: 1.8em;
+    font-family: 'Josefin Sans', serif;
+    width: 80%;
+}
+
+#about p{
+    font-size: 18px;
+}
+
+#about .profile{
+    background: url("../img/about/yo3.jpg")center;
+    border-radius: 100%;
+    width: 340px;
+    height: 340px;
+    margin: auto;
+    color: transparent;
+    background-size: 100%;  
+    margin: auto;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+
+}
+.comentario p{
+    padding-top: 3%;
+    margin: 0%;
+    font-size: 16px;
+}
+#about .profile:hover{
+    background: grey top center;
+    border-radius: 100%;
+    width: 340px;
+    height: 340px;
+    color: white;
+    cursor: pointer;
+    padding: 5%;
+
+}
+
+/*MI TRABAJO*/
+
+.view {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    float: left;
+    border: 5px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 5px #aaa;
+    cursor: default;
+}
+
+.view img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.third-effect:hover .mask {
+    opacity: 1;
+    
+    width: 100%;
+}
+
+.third-effect .mask {
+    width: 100%;
+    opacity: 0;
+    overflow: visible;
+    border: 100px solid rgba(0,0,0,0.7);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.view .mask, .view .content {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.info p:hover{
+  color: white;
+  background: black;
+}
+
+.view a.info {
+    color: white;
+    font-size: 1.8em;
+    padding-top: 10%;
+    /* position: absolute; */
+    /* margin: 0; */
+    /* background: black; */
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    /* text-indent: -9999px; */
+    /* width: 20px; */
+    /* height: 20px; */
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 100%;
+
+}
+
+.third-effect:hover a.info {
+    opacity: 1;
+    -moz-transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.deli{
+  background: url('../img/chambas/deli.jpg')center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+.deli:hover{
+  color: red;
+  width: 100%;
+}
+.flat{
+  background: url('../img/chambas/flat.jpg')center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+.freelancer{
+  background: url('../img/chambas/freelancer.jpg')center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+.pretty{
+  background: url('../img/chambas/pretty.jpg')center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+.danza{
+  background: url('../img/chambas/sdanza.jpg')center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+
+/*blog*/
+ 
+ .post img{
+  width: 100%;
+ }
+  .post h3{
+    font-family: 'Josefin Slab';
+  }
+  .post blockquote{
+    font-size: 16px;
+  }
+
+
+/*SERVICIOS*/
+#servicios{
+    padding: 5%;
+}
+
+#servicios p{
+  font-size: 12px;
+
+}
+#servicios h3{
+  font-family: 'Josefin Slab';
+  text-decoration: underline;
+}
+
+#servicios span{
+  font-size: 19px;
+  padding: 5%;
+}
+
+#servicios .col-sm-6{
+  padding: 5%;
+}
+.fa-plus{
+     font-size: 5em;
+     color: rgb(178,6,83);
+     padding: 5%;
+     margin: auto;
+}
+
+ .fa-file-code-o , .fa-camera-retro , .fa-video-camera{
+     font-size: 7em !important;
+     color: rgb(178,6,83);
+     padding: 5% 13%;
+}
+
+.int{
+    padding-top: 15%; 
+}
+
+/*Blog*/
+
+#servicios{
+    background: url('../img/photography.png');
+}
+
+
+/*CONTACTO*/
+.contacto{
+    background: url('../img/dark_embroidery.png');
+    width: 100%;
+    background-size: repeat;
+    color: white;
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+.sociales a{
+  color: white;
+  font-size: 2em;
+  padding: 1%;
+}
+.tarjeta h3{
+  font-family: 'Josefin Slab';
+}
+.tarjeta p{
+  font-size: 18px;
+}
+.sociales a:hover{
+  color: rgb(178,6,83);
+}
+.form-control {
+    opacity: 0.3;
+}
+.rowright input{
+    color: white;
+    width: 100%
+}
+button .btn-default{
+  padding: 3%;
+  background: rgb(178,6,83)
+}
+button:hover{
+  color: white !important;
+  font-weight: bold;
+  background: rgb(178,6,83) !important;
+  border: rgb(178,6,83);
+}
+

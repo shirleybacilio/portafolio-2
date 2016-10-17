@@ -29,11 +29,7 @@ p{
   width: 40%;
   margin: auto;
 }
-.nav-space{
-      padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 1.8em;
-}
+
 
 .line-white{
    border: 1.5px solid white;
@@ -144,6 +140,11 @@ h2,
    #servicios{
     display: block;
    }
+   .nav-space{
+      padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.8em;
+}
 
 }
 
